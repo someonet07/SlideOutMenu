@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		981562262255587500CD7E11 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981562252255587500CD7E11 /* MenuController.swift */; };
 		9883289022554DC700682915 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9883288F22554DC700682915 /* AppDelegate.swift */; };
 		9883289222554DC700682915 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9883289122554DC700682915 /* ViewController.swift */; };
 		9883289522554DC700682915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9883289322554DC700682915 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		981562252255587500CD7E11 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		9883288C22554DC700682915 /* SlideOutMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideOutMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9883288F22554DC700682915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9883289122554DC700682915 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98156222225557F900CD7E11 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				981562252255587500CD7E11 /* MenuController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		9883288322554DC700682915 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +64,7 @@
 		9883288E22554DC700682915 /* SlideOutMenu */ = {
 			isa = PBXGroup;
 			children = (
+				98156222225557F900CD7E11 /* Controllers */,
 				9883288F22554DC700682915 /* AppDelegate.swift */,
 				9883289122554DC700682915 /* ViewController.swift */,
 				9883289322554DC700682915 /* Main.storyboard */,
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9883289222554DC700682915 /* ViewController.swift in Sources */,
+				981562262255587500CD7E11 /* MenuController.swift in Sources */,
 				9883289022554DC700682915 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
