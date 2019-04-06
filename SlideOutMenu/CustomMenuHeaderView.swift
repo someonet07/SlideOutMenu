@@ -8,6 +8,13 @@
 
 import UIKit
 
+class ProfileImageView: UIImageView {
+    
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: 48, height: 48)
+    }
+}
+
 class SpacerView: UIView {
     
     let space: CGFloat
@@ -27,24 +34,51 @@ class SpacerView: UIView {
 }
 
 class CustomMenuHeaderView: UIView {
-
+    
+    let nameLabel = UILabel()
+    let userNameLabel = UILabel()
+    let statsLabel = UILabel()
+    let profileImageView = ProfileImageView()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         backgroundColor = .white
-        
+        setupComponentProps()
+        setupStackView()
+    }
+    
+    fileprivate func setupComponentProps() {
         // custom components
-        let nameLabel = UILabel()
         nameLabel.text = "Hi There"
         nameLabel.font = UIFont.systemFont(ofSize: 20, weight: .heavy)
-        let userNameLabel = UILabel()
-        userNameLabel.text = "Build that App"
-        
-        let statsLabel = UILabel()
+        userNameLabel.text = "@buildthatapp"
         statsLabel.text = "42 following 7991 followers"
+        profileImageView.image = #imageLiteral(resourceName: "girl_profile")
+        profileImageView.contentMode = .scaleAspectFit
+        profileImageView.layer.cornerRadius = 48 / 2
+        profileImageView.clipsToBounds = true
         
+        setupStatsAttributedText()
+    }
+    
+    fileprivate func setupStatsAttributedText() {
+        statsLabel.font = UIFont.systemFont(ofSize: 14)
+        let attributedText = NSMutableAttributedString(string: "42 ", attributes: [.font: UIFont.systemFont(ofSize: 18, weight: .medium)])
+        attributedText.append(NSAttributedString(string: "Following  ", attributes: [.foregroundColor: UIColor.black]))
+        attributedText.append(NSAttributedString(string: "7091 ", attributes: [.font: UIFont.systemFont(ofSize: 17, weight: .medium)]))
+        attributedText.append(NSAttributedString(string: "Followers", attributes: [.foregroundColor: UIColor.black]))
+        
+        statsLabel.attributedText = attributedText
+    }
+    
+    fileprivate func setupStackView() {
         let arrangedSubViews = [
-            UIView(), nameLabel, userNameLabel, SpacerView(space: 16), statsLabel
+            UIView(),
+            UIStackView(arrangedSubviews: [profileImageView, UIView()]),
+            nameLabel,
+            userNameLabel,
+            SpacerView(space: 16),
+            statsLabel
         ]
         let stackView = UIStackView(arrangedSubviews: arrangedSubViews)
         stackView.axis = .vertical

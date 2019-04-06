@@ -11,6 +11,7 @@
 		981562282256767300CD7E11 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981562272256767300CD7E11 /* HomeController.swift */; };
 		9815622D2258ADB600CD7E11 /* BaseSlidingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815622C2258ADB600CD7E11 /* BaseSlidingController.swift */; };
 		981562302258E1A200CD7E11 /* CustomMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815622F2258E1A200CD7E11 /* CustomMenuHeaderView.swift */; };
+		981562322258F5D200CD7E11 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981562312258F5D200CD7E11 /* MenuItemCell.swift */; };
 		9883289022554DC700682915 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9883288F22554DC700682915 /* AppDelegate.swift */; };
 		9883289522554DC700682915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9883289322554DC700682915 /* Main.storyboard */; };
 		9883289722554DCB00682915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9883289622554DCB00682915 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		981562272256767300CD7E11 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		9815622C2258ADB600CD7E11 /* BaseSlidingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSlidingController.swift; sourceTree = "<group>"; };
 		9815622F2258E1A200CD7E11 /* CustomMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuHeaderView.swift; sourceTree = "<group>"; };
+		981562312258F5D200CD7E11 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		9883288C22554DC700682915 /* SlideOutMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideOutMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9883288F22554DC700682915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9883289422554DC700682915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				9815622F2258E1A200CD7E11 /* CustomMenuHeaderView.swift */,
+				981562312258F5D200CD7E11 /* MenuItemCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				981562282256767300CD7E11 /* HomeController.swift in Sources */,
 				981562262255587500CD7E11 /* MenuController.swift in Sources */,
 				9883289022554DC700682915 /* AppDelegate.swift in Sources */,
+				981562322258F5D200CD7E11 /* MenuItemCell.swift in Sources */,
 				981562302258E1A200CD7E11 /* CustomMenuHeaderView.swift in Sources */,
 				9815622D2258ADB600CD7E11 /* BaseSlidingController.swift in Sources */,
 			);
