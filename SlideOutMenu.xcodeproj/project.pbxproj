@@ -14,6 +14,10 @@
 		981562322258F5D200CD7E11 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981562312258F5D200CD7E11 /* MenuItemCell.swift */; };
 		9842F23C226B6029009791F5 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9842F23B226B6029009791F5 /* ListController.swift */; };
 		9842F23E226B64F3009791F5 /* BookmarksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9842F23D226B64F3009791F5 /* BookmarksController.swift */; };
+		9842F240226C8517009791F5 /* ChatroomsMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9842F23F226C8517009791F5 /* ChatroomsMenuController.swift */; };
+		9842F242226C8ADF009791F5 /* ChatroomMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9842F241226C8ADF009791F5 /* ChatroomMenuCell.swift */; };
+		9842F244226C9716009791F5 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9842F243226C9716009791F5 /* Extensions+UIView.swift */; };
+		9842F246226CA0CA009791F5 /* ChatroomMenuContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9842F245226CA0CA009791F5 /* ChatroomMenuContainerController.swift */; };
 		9883289022554DC700682915 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9883288F22554DC700682915 /* AppDelegate.swift */; };
 		9883289522554DC700682915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9883289322554DC700682915 /* Main.storyboard */; };
 		9883289722554DCB00682915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9883289622554DCB00682915 /* Assets.xcassets */; };
@@ -28,6 +32,10 @@
 		981562312258F5D200CD7E11 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		9842F23B226B6029009791F5 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		9842F23D226B64F3009791F5 /* BookmarksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksController.swift; sourceTree = "<group>"; };
+		9842F23F226C8517009791F5 /* ChatroomsMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomsMenuController.swift; sourceTree = "<group>"; };
+		9842F241226C8ADF009791F5 /* ChatroomMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomMenuCell.swift; sourceTree = "<group>"; };
+		9842F243226C9716009791F5 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
+		9842F245226CA0CA009791F5 /* ChatroomMenuContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomMenuContainerController.swift; sourceTree = "<group>"; };
 		9883288C22554DC700682915 /* SlideOutMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideOutMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9883288F22554DC700682915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9883289422554DC700682915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +63,8 @@
 				981562272256767300CD7E11 /* HomeController.swift */,
 				9842F23B226B6029009791F5 /* ListController.swift */,
 				9842F23D226B64F3009791F5 /* BookmarksController.swift */,
+				9842F23F226C8517009791F5 /* ChatroomsMenuController.swift */,
+				9842F245226CA0CA009791F5 /* ChatroomMenuContainerController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -72,6 +82,8 @@
 			children = (
 				9815622F2258E1A200CD7E11 /* CustomMenuHeaderView.swift */,
 				981562312258F5D200CD7E11 /* MenuItemCell.swift */,
+				9842F241226C8ADF009791F5 /* ChatroomMenuCell.swift */,
+				9842F243226C9716009791F5 /* Extensions+UIView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -177,14 +189,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9842F244226C9716009791F5 /* Extensions+UIView.swift in Sources */,
 				981562282256767300CD7E11 /* HomeController.swift in Sources */,
 				9842F23E226B64F3009791F5 /* BookmarksController.swift in Sources */,
 				981562262255587500CD7E11 /* MenuController.swift in Sources */,
 				9883289022554DC700682915 /* AppDelegate.swift in Sources */,
+				9842F246226CA0CA009791F5 /* ChatroomMenuContainerController.swift in Sources */,
 				981562322258F5D200CD7E11 /* MenuItemCell.swift in Sources */,
 				981562302258E1A200CD7E11 /* CustomMenuHeaderView.swift in Sources */,
 				9815622D2258ADB600CD7E11 /* BaseSlidingController.swift in Sources */,
+				9842F242226C8ADF009791F5 /* ChatroomMenuCell.swift in Sources */,
 				9842F23C226B6029009791F5 /* ListController.swift in Sources */,
+				9842F240226C8517009791F5 /* ChatroomsMenuController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
