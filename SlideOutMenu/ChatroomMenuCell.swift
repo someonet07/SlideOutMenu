@@ -35,8 +35,6 @@ class ChatroomMenuCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
         bgView.isHidden = !selected
-
-//        contentView.backgroundColor = selected ? .orange : .clear
     }
 
 }

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		981562262255587500CD7E11 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981562252255587500CD7E11 /* MenuController.swift */; };
 		981562282256767300CD7E11 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981562272256767300CD7E11 /* HomeController.swift */; };
 		9815622D2258ADB600CD7E11 /* BaseSlidingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815622C2258ADB600CD7E11 /* BaseSlidingController.swift */; };
 		981562302258E1A200CD7E11 /* CustomMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815622F2258E1A200CD7E11 /* CustomMenuHeaderView.swift */; };
@@ -25,7 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		981562252255587500CD7E11 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		981562272256767300CD7E11 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		9815622C2258ADB600CD7E11 /* BaseSlidingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSlidingController.swift; sourceTree = "<group>"; };
 		9815622F2258E1A200CD7E11 /* CustomMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuHeaderView.swift; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				981562292257A9BA00CD7E11 /* Base */,
-				981562252255587500CD7E11 /* MenuController.swift */,
 				981562272256767300CD7E11 /* HomeController.swift */,
 				9842F23B226B6029009791F5 /* ListController.swift */,
 				9842F23D226B64F3009791F5 /* BookmarksController.swift */,
@@ -192,7 +189,6 @@
 				9842F244226C9716009791F5 /* Extensions+UIView.swift in Sources */,
 				981562282256767300CD7E11 /* HomeController.swift in Sources */,
 				9842F23E226B64F3009791F5 /* BookmarksController.swift in Sources */,
-				981562262255587500CD7E11 /* MenuController.swift in Sources */,
 				9883289022554DC700682915 /* AppDelegate.swift in Sources */,
 				9842F246226CA0CA009791F5 /* ChatroomMenuContainerController.swift in Sources */,
 				981562322258F5D200CD7E11 /* MenuItemCell.swift in Sources */,

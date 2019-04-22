@@ -8,6 +8,21 @@
 
 import UIKit
 
+extension ChatroomsMenuController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            filteredResults = chatroomGroups
+            tableView.reloadData()
+            return
+        }
+        filteredResults = chatroomGroups.map({ (group) -> [String] in
+            return group.filter { $0.lowercased().contains(searchText.lowercased())}
+        })
+        tableView.reloadData()
+    }
+}
+
 class ChatroomsMenuController: UITableViewController {
     
     let chatroomGroups = [
@@ -15,9 +30,12 @@ class ChatroomsMenuController: UITableViewController {
         ["jobs"],
         ["Steve Jobs", "Tim Cook", "Barak Obama"]
     ]
+    
+    var filteredResults = [[String]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        filteredResults = chatroomGroups
         tableView.backgroundColor = #colorLiteral(red: 0.2916852534, green: 0.2290241122, blue: 0.2839566767, alpha: 1)
         tableView.separatorStyle = .none
     }
@@ -46,16 +64,16 @@ class ChatroomsMenuController: UITableViewController {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return chatroomGroups.count
+        return filteredResults.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return chatroomGroups[section].count
+        return filteredResults[section].count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = ChatroomMenuCell(style: .default, reuseIdentifier: nil)
-        let text = chatroomGroups[indexPath.section][indexPath.row]
+        let text = filteredResults[indexPath.section][indexPath.row]
         cell.textLabel?.text = text
         cell.backgroundColor = .clear
         cell.textLabel?.textColor = .white
@@ -68,5 +86,11 @@ class ChatroomsMenuController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            
+            let slidingController = UIApplication.shared.keyWindow?.rootViewController as? BaseSlidingController
+            
+            slidingController?.didSelectMenuItem(indexPath: indexPath)
+        }
     
 }
